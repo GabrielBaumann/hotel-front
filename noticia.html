@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia - Hotel Alto Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        yellow: {
+                            'alto': '#FFD700',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gray-50">
+    <header class="border-b border-gray-200 bg-white">
+        <div class="container mx-auto px-4 py-6 max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h1 class="text-3xl font-bold text-gray-800">Hotel Alto Blog</h1>
+                    <p class="text-gray-600">Notícias e atualizações do nosso hotel</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 max-w-3xl">
+        <article class="bg-white rounded-lg border border-gray-100 overflow-hidden mb-12">
+            <img src="https://images.pexels.com/photos/594077/pexels-photo-594077.jpeg?cs=srgb&dl=pexels-asman-chema-91897-594077.jpg&fm=jpg" alt="Notícia" class="w-full h-64 md:h-96 object-cover">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-4">
+                    <span class="inline-block px-3 py-1 bg-yellow-alto text-white text-sm rounded-full">Novidades</span>
+                    <span class="ml-4 text-sm text-gray-500">Publicado em 15/10/2023</span>
+                </div>
+                <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Hotel Alto inaugura nova ala de suítes premium</h1>
+                
+                <div class="prose max-w-none text-gray-600 mb-8">
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <p class="mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                    <h2 class="text-xl font-bold text-gray-800 mt-6 mb-3">Novos serviços incluídos</h2>
+                    
+                    <p class="mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    
+                    <ul class="list-disc pl-5 mb-4">
+                        <li class="mb-2">Serviço de concierge 24 horas</li>
+                        <li class="mb-2">Café da manhã servido na suíte</li>
+                        <li class="mb-2">Acesso exclusivo ao lounge premium</li>
+                        <li class="mb-2">Tratamentos de spa personalizados</li>
+                    </ul>
+                    
+                    <img src="https://wallpapers.com/images/hd/hotel-background-2qosz2h6xb1xpnka.jpg" alt="Suíte premium" class="w-full h-64 object-cover my-6 rounded">
+                    
+                    <p class="mb-4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                </div>
+                
+                <div class="border-t border-gray-200 pt-6 mb-8">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Compartilhe esta notícia</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center">f</a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-400 text-white flex items-center justify-center">t</a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center">p</a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 text-white flex items-center justify-center">in</a>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-200 pt-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Deixe seu comentário</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Nome</label>
+                            <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-alto">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-alto">
+                        </div>
+                        <div class="mb-4">
+                            <label for="comment" class="block text-gray-700 text-sm font-medium mb-2">Comentário</label>
+                            <textarea id="comment" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-alto"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-2 bg-yellow-alto text-white rounded-md hover:bg-yellow-600 transition">Enviar comentário</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+        
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Comentários</h2>
+            <div class="space-y-6">  
+                <div class="bg-white rounded-lg border border-gray-100 p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-bold mr-4">AM</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ana Maria</h4>
+                            <span class="text-sm text-gray-500">15/10/2023</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">As fotos das novas suítes estão incríveis! Mal posso esperar para conhecer pessoalmente. Parabéns pela expansão!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Notícias relacionadas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article class="bg-white rounded-lg border border-gray-100 overflow-hidden">
+                    <img src="https://wallpapers.com/images/hd/hotel-background-2qosz2h6xb1xpnka.jpg" alt="Notícia" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Novos tratamentos no spa do Hotel Alto</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">10/09/2023</span>
+                            <a href="noticia.html" class="text-yellow-alto text-sm font-medium hover:underline">Ler mais</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="bg-white rounded-lg border border-gray-100 overflow-hidden">
+                    <img src="https://www.worldofwallpaper.com/media/wysiwyg/HQN071-HARLEQUIN-KALINA-WALLPAPER-MIDNIGHT-BAKED-TERRACOTTA-NECTAR-WALLPAPER-AE3.jpg" alt="Notícia" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Chef convidado no restaurante principal</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">05/09/2023</span>
+                            <a href="noticia.html" class="text-yellow-alto text-sm font-medium hover:underline">Ler mais</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Hotel Alto Blog</h3>
+                    <p class="text-gray-400">Notícias e atualizações do nosso hotel</p>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-alto">Início</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-yellow-alto">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-alto">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Hotel Alto Blog. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

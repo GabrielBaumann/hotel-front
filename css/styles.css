@@ -1,0 +1,22 @@
+/* Estilos personalizados podem ser adicionados aqui */
+.prose {
+    line-height: 1.6;
+}
+
+.prose p {
+    margin-bottom: 1rem;
+}
+
+.prose ul {
+    margin-bottom: 1rem;
+}
+
+.prose h2, .prose h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.prose img {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
